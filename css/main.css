@@ -167,21 +167,6 @@ img {
 /* Hero styles finished
 /* Site main end */
 
-/* Retina background images */
-
-@media
-only screen and (-webkit-min-device-pixel-ratio: 2),
-only screen and (   min--moz-device-pixel-ratio: 2),
-only screen and (     -o-min-device-pixel-ratio: 2/1),
-only screen and (        min-device-pixel-ratio: 2),
-only screen and (                min-resolution: 192dpi),
-only screen and (                min-resolution: 2dppx) {
-
-  /* Retina-specific stuff here */
-
-}
-
-
 /* Media quary Tablet */
 
 @media only screen and (min-width: 576px) {
@@ -224,5 +209,25 @@ only screen and (                min-resolution: 2dppx) {
 /* Media quary Desktop */
 
 @media only screen and (min-width: 1024px) {
-
+  .hero__item::before {
+    display: block;
+    width: 128px;
+    height: 128px;
+    margin: 0 auto;
+    background-image: url("../images/boydesktop.png");
+    background-repeat: no-repeat;
+    content: "";
+  }
+  
+  .hero__item--bike::before {
+    background-image: url("../images/bikedesktop.png");
+  }
+  
+  .hero__item--car::before {
+    background-image: url("../images/cardesktop.png");
+  }
+  
+  .hero__item--plane::before {
+    background-image: url("../images/planedesktop.png");
+  }
 }
