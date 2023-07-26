@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/normalize.css">
+  <link rel="stylesheet" href="./css/main.css">
+  <title>Velocity</title>
+</head>
+<body>
+  <!-- Site header begin -->
+  <header class="site-header visually-hidden"></header>
+  <!-- Site header end -->
+
+  <!-- Site main begin -->
+  <main class="site-main">
+    <section class="site-main__hero hero">
+      <div class="container">
+        <h1 class="hero__title">Kim birinchi borishga !!!</h1>
+        <form class="hero__form js-hero__form">
+          <label class="hero__label" for="distance">Masofa</label>
+          <div class="hero__form-inner">
+            <input class="hero__input js-hero__input" type="number" id="distance" name="user_distance" placeholder="Masofani kiriting" aria-label="Masofani kiriting" min="0" required>
+            <button class="hero__btn" type="submit">Hisobla</button>
+          </div>
+        </form>
+        <h2 class="hero__subtitle visually-hidden">Masofani o'lchagich dasturga hush kelibsiz</h2>
+        <ol class="hero__list">
+          <li class="hero__item">
+            <h3 class="hero__item-title">Piyoda</h3>
+              <output class="hero__incoming js-hero__incoming">N vaqt</output>
+          </li>
+          <li class="hero__item hero__item--bike">
+            <h3 class="hero__item-title">Velosiped</h3>
+              <output class="hero__incoming js-hero__incoming--bike">N vaqt</output>
+          </li>
+          <li class="hero__item hero__item--car">
+            <h3 class="hero__item-title">Moshina</h3>
+              <output class="hero__incoming js-hero__incoming--car">N vaqt</output>
+          </li>
+          <li class="hero__item hero__item--plane">
+            <h3 class="hero__item-title">Samalyot</h3>
+              <output class="hero__incoming js-hero__incoming--plane">N</output>
+          </li>
+        </ol>
+      </div>
+    </section>
+  </main>
+  <!-- Site main end -->
+
+  <!-- Site footer begin -->
+  <footer class="site-footer visually-hidden"></footer>
+  <!-- Site footer end -->
+
+
+
+  <script src="./js/main.js"></script>
+</body>
+</html>

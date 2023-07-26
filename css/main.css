@@ -1,0 +1,228 @@
+/* Font families */
+
+@font-face {
+  font-family: "Akatab";
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/akatabregular.woff2") format("woff2"),
+       url("../fonts/akatabregular.woff") format("woff");
+}
+@font-face {
+  font-family: "Akatab";
+  font-weight: 500;
+  font-display: swap;
+  src: url("../fonts/akatabmedium.woff2") format("woff2"),
+       url("../fonts/akatabmedium.woff") format("woff");
+}
+@font-face {
+  font-family: "Akatab";
+  font-weight: 700;
+  font-display: swap;
+  src: url("../fonts/akatabbold.woff2") format("woff2"),
+       url("../fonts/akatabbold.woff") format("woff");
+}
+
+/* Mobile first */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  font-family: "Akatab", "Arial", sans-serif;
+}
+
+img {
+  display: block;
+  height: auto;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+}
+
+.container {
+  max-width: 1280px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* Sitcky footer */
+
+.site-main {
+  flex-grow: 1;
+}
+
+/* Site main begin */
+/* Hero styles started */
+
+.hero {
+  padding: 30px 0;
+  text-align: center;
+  color: #333;
+}
+
+.hero__title {
+  margin-top: 0;
+  margin-bottom: 40px;
+  font-size: 32px;
+  line-height: 120%;
+  letter-spacing: 0.56px;
+}
+
+.hero__form-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 15px;
+  margin-bottom: 30px;
+}
+
+.hero__label {
+  display: block;
+  margin-bottom: 16px;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 120%;
+  letter-spacing: 1px;
+}
+
+.hero__input {
+  max-width: 60vw;
+  width: 100%;
+  padding: 8px 8px 8px 16px;
+  font-size: 18px;
+  border: 1.5px solid #000;
+  border-radius: 8px;
+}
+
+.hero__btn {
+  max-width: 30vw;
+  width: 100%;
+  padding: 8px 16px;
+  font-size: 18px;
+  border: 1.5px solid #000;
+  border-radius: 8px;
+}
+
+.hero__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+.hero__item {
+  max-width: 289px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #333;
+  border-radius: 15px;
+}
+
+.hero__item::before {
+  display: block;
+  width: 64px;
+  height: 64px;
+  margin: 0 auto;
+  background-image: url("../images/boy.png");
+  background-repeat: no-repeat;
+  content: "";
+}
+
+.hero__item--bike::before {
+  background-image: url("../images/bike.png");
+}
+
+.hero__item--car::before {
+  background-image: url("../images/car.png");
+}
+
+.hero__item--plane::before {
+  background-image: url("../images/plane.png");
+}
+
+.hero__item-title {
+  font-size: 22px;
+}
+
+/* Hero styles finished
+/* Site main end */
+
+/* Retina background images */
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) {
+
+  /* Retina-specific stuff here */
+
+}
+
+
+/* Media quary Tablet */
+
+@media only screen and (min-width: 576px) {
+  .hero__title {
+    margin-bottom: 50px;
+    font-size: 40px;
+  }
+
+  .hero__form {
+    display: flex;
+    align-items: center;
+    max-width: 916px;
+    margin: 0 auto 60px;
+  }
+
+  .hero__label {
+    flex-grow: 1;
+    margin-bottom: 0;
+    font-size: 24px;
+  }
+
+  .hero__form-inner {
+    flex-grow: 2;
+    margin-bottom: 0;
+  }
+
+  .hero__input {
+    font-size: 20px;
+  }
+
+  .hero__btn {
+    font-size: 20px;
+  }
+
+  .hero__item-title {
+    font-size: 22px;
+  }
+
+}
+/* Media quary Desktop */
+
+@media only screen and (min-width: 1024px) {
+
+}
